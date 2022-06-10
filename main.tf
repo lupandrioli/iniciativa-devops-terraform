@@ -24,7 +24,7 @@ resource "digitalocean_kubernetes_cluster" "k8s_iniciativa" {
 }
 
 resource "digitalocean_kubernetes_node_pool" "node_premium" {
-  cluster_id = digitalocean_kubernetes_cluster.foo.id
+  cluster_id = digitalocean_kubernetes_cluster.k8s_iniciativa.id
 
   name       = "premium"
   size       = "s-4vcpu-8gb"
